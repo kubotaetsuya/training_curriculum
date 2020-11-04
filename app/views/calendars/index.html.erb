@@ -7,7 +7,7 @@
   <% end %>
 
 </div>
-<div>
+
   <div class=calendar>
     <% @week_days.each do |day| %>
       <div class='item'>
@@ -17,19 +17,19 @@
         <ul class='content'>
         <% if day[:plans].length != 0 %>
           <% day[:plans].each do |plan| %>
-            <li class='plan-list'>・<%= plan %></li>
+            <li class='plan-list'> <%= plan %></li>
           <% end %>
         <% end %>
         </ul>
+      
 
-      </div>
       <ul class='content'>
       <% if day[:plans].length != 0 %>
         <% day[:plans].each do |plan| %>
-          <li class='plan-list'>・<%= plan %></li>
+          <li class='plan-list'> <%= plan %></li>
         <% end %>
       <% end %>
       </ul>
-    </div>
+      </div>
   <% end %>
 </div>
